@@ -9,7 +9,7 @@ const port = process.env.PORT;
 app.use(express.static('public'));
 
 // Allow front-end access to node_modules folder
-app.use('/scripts', express.static(`${__dirname}/node_modules/`));
+app.use('/', express.static(`${__dirname}/node_modules/`));
 
 // Listen for HTTP requests on port 3000
 app.listen(port, () => {
