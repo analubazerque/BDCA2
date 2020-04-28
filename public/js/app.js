@@ -1,22 +1,66 @@
-window.addEventListener('load', () => {
-  
-  fetch('http://www.boredapi.com/api/activity/')
-  .then(
-    function(response) {
-      if (response.status !== 200) {
-        console.log('Looks like there was a problem. Status Code: ' +
-          response.status);
-        return;
-      }
+// $(document).ready(()=>{
+//   console.log("here")
+//   $( "#Recreational" ).click(function() {
+//     alert( "Handler for .click() called." );
+//   });
 
-      // Examine the text in the response
-      response.json().then(function(data) {
-        console.log(data);
-      });
+
+
+//   });
+
+const random = document.getElementById('random');
+random.addEventListener('click', () => {
+  alert("Handler for .click() called.");
+
+  const options = {
+    method: "GET",
+    headers: {
+      "Content-Type": "application/json"
     }
-  )
-  .catch(function(err) {
-    console.log('Fetch Error :-S', err);
-  });
-            
+  }
+
+  fetch('http://www.boredapi.com/api/activity/', options)
+    .then(res => res.json())
+    .then(res => {
+      console.log(res)
+    })
+    .catch(err => console.log(err));
+});
+
+const type = document.getElementById('bytype');
+type.addEventListener('click', () => {
+  alert("Handler for .click() called.");
+
+  const options = {
+    method: "GET",
+    headers: {
+      "Content-Type": "application/json"
+    }
+  }
+
+  fetch('http://www.boredapi.com/api/activity/', options)
+    .then(res => res.json())
+    .then(res => {
+      console.log(res)
+    })
+    .catch(err => console.log(err));
+});
+
+const price = document.getElementById('byprice');
+price.addEventListener('click', () => {
+  alert("Handler for .click() called.");
+
+  const options = {
+    method: "GET",
+    headers: {
+      "Content-Type": "application/json"
+    }
+  }
+
+  fetch('http://www.boredapi.com/api/activity/', options)
+    .then(res => res.json())
+    .then(res => {
+      console.log(res)
+    })
+    .catch(err => console.log(err));
 });

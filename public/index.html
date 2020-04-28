@@ -1,4 +1,3 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <!--
 Design by TEMPLATED
 http://templated.co
@@ -10,10 +9,13 @@ Version    : 1.0
 Released   : 20140322
 
 -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
+<!-- <script src="jquery-3.4.1.min.js"></script>	 -->
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title></title>
+<title>Bored in Quarentine</title>
 <meta name="keywords" content="" />
 <meta name="description" content="" />
 <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900|Quicksand:400,700|Questrial" rel="stylesheet" />
@@ -27,16 +29,16 @@ Released   : 20140322
 <div id="header-wrapper">	
 	<div id="header" class="container">
 		<div id="logo">
-        	<span ><img src="./images/bored.png" height="200"></img></span>
-			<h1><a href="#">Bored in Quarentine</a></h1>
+        	<span ><img src="./images/bored.png" height="150"></img></span>
+			<h1>Bored in Quarentine</h1>
 		</div>
 		<div id="menu">
 			<ul>
 				<li class="active"><a href="#" accesskey="1" title="">Homepage</a></li>
 				<li><a href="#" accesskey="2" title="">About Us</a></li>
-				<li><a href="#" accesskey="3" title="">Recreational Activities</a></li>
-				<li><a href="#" accesskey="4" title="">Activities by Type</a></li>
-				<li><a href="#" accesskey="5" title="">Free Activities</a></li>
+				<li><a href="#" id="random" accesskey="3" title="">Recreational Activities</a></li>
+				<li><a href="#" id="bytype" accesskey="4" title="">Activities by Type</a></li>
+				<li><a href="#" id="byprice" accesskey="5" title="">Free Activities</a></li>
 			</ul>
 		</div>
 	</div>
@@ -54,22 +56,22 @@ Released   : 20140322
 		<div><span class="arrow-down"></span></div>
 		<div id="tbox1">
 			<div class="title">
-				<h2>Recreational Activities</h2>
+				<h2>Random Activities</h2>
 			</div>
-			<p>Nullam non wisi a sem semper eleifend. Donec mattis libero eget urna. Duis pretium velit ac suscipit mauris. Proin eu wisi suscipit nulla suscipit interdum.</p>
-			<a href="#" class="button">Learn More</a> </div>
+			<p>Click the button bellow and get a suggestion of a random activity of any type, with any number of participants and any price.</p>
+			<button id="random" class="button">Get Random</button> </div>
 		<div id="tbox2">
 			<div class="title">
 				<h2>Activities by Type</h2>
 			</div>
-			<p>Proin eu wisi suscipit nulla suscipit interdum. Nullam non wisi a sem semper suscipit eleifend. Donec mattis libero eget urna. Duis  velit ac mauris.</p>
-			<a href="#" class="button">Learn More</a> </div>
+			<p>Select one of the type of activities among the options and get an activity related to what you chose.</p>
+			<button id="bytype" class="button">Get Type</button> </div>
 		<div id="tbox3">
 			<div class="title">
 				<h2>Free Activities</h2>
 			</div>
-			<p>Donec mattis libero eget urna. Duis pretium velit ac mauris. Proin eu wisi suscipit nulla suscipit interdum. Nullam non wisi a sem suscipit  eleifend.</p>
-			<a href="#" class="button">Learn More</a> </div>
+			<p>Click the button below and you will be given an activity that does not require anything that costs money!</p>
+			<button id="byprice" class="button">Get Free</button> </div>
 	</div>
 	
 <div id="footer">
@@ -91,5 +93,6 @@ Released   : 20140322
 		</div>
 	</div>
 </div>
+<script src="js/app.js"></script>
 </body>
 </html>
