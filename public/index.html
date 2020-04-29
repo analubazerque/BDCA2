@@ -63,14 +63,29 @@ Released   : 20140322
 			<div class="title">
 				<h2>Activities by Type</h2>
 			</div>
-			<p>Select one of the type of activities among the options and get an activity related to what you chose.</p>
-			<button id="bytype" class="button">Get Type</button> </div>
+			<p id="myTypeData">Select one of the type of activities among the options and get an activity related to what you chose.</p>
+			<form>
+				<div >
+					<select id="section">
+			<option value="education">Education</option>
+			<option value="recreational">Recreational</option>
+			<option value="social">Social</option>
+			<option value="diy">DIY</option>
+			<option value="charity">Charity</option>
+			<option value="cooking">Cooking</option>
+			<option value="relaxation">Relaxation</option>
+			<option value="music">Music</option>
+			<option value="busywork">Busywork</option>
+		</select>
+			<button id="bytype" type="button" class="button">Get Type</button> </div>
+		</form>
+	</div>	
 		<div id="tbox3">
 			<div class="title">
 				<h2>Free Activities</h2>
 			</div>
-			<p>Click the button below and you will be given an activity that does not require anything that costs money!</p>
-			<button id="byprice" class="button">Get Free</button> </div>
+			<p id="byprice">Click the button below and you will be given an activity that does not require anything that costs money!</p>
+			<button id="bypricebutton" type="button" class="button">Get Free</button> </div>
 	</div>
 	
 <div id="footer">
