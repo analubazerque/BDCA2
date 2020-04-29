@@ -12,101 +12,119 @@ Released   : 20140322
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<!-- <script src="jquery-3.4.1.min.js"></script>	 -->
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Bored in Quarentine</title>
-<meta name="keywords" content="" />
-<meta name="description" content="" />
-<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900|Quicksand:400,700|Questrial" rel="stylesheet" />
-<link href="./css/default.css" rel="stylesheet" type="text/css" media="all" />
-<link href="./css/fonts.css" rel="stylesheet" type="text/css" media="all" />
 
-<!--[if IE 6]><link href="default_ie6.css" rel="stylesheet" type="text/css" /><![endif]-->
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Bored in Quarentine</title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<link
+		href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900|Quicksand:400,700|Questrial"
+		rel="stylesheet" />
+	<link href="./css/default.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="./css/fonts.css" rel="stylesheet" type="text/css" media="all" />
+
 
 </head>
+
 <body>
-<div id="header-wrapper">	
-	<div id="header" class="container">
-		<div id="logo">
-        	<span ><img src="./images/bored.png" height="150"></img></span>
-			<h1>Bored in Quarentine</h1>
-		</div>
-		<div id="menu">
-			<ul>
-				<li class="active"><a href="#" accesskey="1" title="">Homepage</a></li>
-				<li><a href="#" accesskey="2" title="">About Us</a></li>
-			</ul>
-		</div>
-	</div>
-</div>
-<div class="wrapper">
-	<div id="banner" class="container"><img src="images/boreddog.jpg" width="1200" height="500" alt="" /></div>
-	<div id="welcome" class="container">
-    	
-<div class="title">
-	  <h2>Welcome to Bored in Quarentine</h2>
-		</div>
-		<p>This is <strong>Bored in Quarentine</strong>, a webpage where you get find suggestions of activities to do while stuck at home during this pandemic. It will not save the world or cure corona virus (read it with Cardi B's voice), but it may help you to keep busy or just dissociate, really. </p>
-	</div>
-	<div id="three-column" class="container">
-		<div><span class="arrow-down"></span></div>
-		<div id="tbox1">
-			<div class="title">
-				<h2>Random Activities</h2>
+	<!-- Navigation -->
+	<div id="header-wrapper">
+		<div id="header" class="container">
+			<div id="logo">
+				<span><img src="./images/bored.png" height="150"></img></span>
+				<h1>Bored in Quarentine</h1>
 			</div>
-			<p id="myRandomData">Click the button bellow and get a suggestion of a random activity of any type, with any number of participants and any price.</p>
-			<button id="random" href="#" class="button">Get Random</button> 
-			
-		</div>
-		<div id="tbox2">
-			<div class="title">
-				<h2>Activities by Type</h2>
+			<div id="menu">
+				<ul>
+					<li class="active"><a href="#" accesskey="1" title="">Homepage</a></li>
+					<li><a href="#" accesskey="2" title="">About Us</a></li>
+				</ul>
 			</div>
-			<p id="myTypeData">Select one of the type of activities among the options and get an activity related to what you chose.</p>
-			<form>
-				<div >
-					<select id="section">
-			<option value="education">Education</option>
-			<option value="recreational">Recreational</option>
-			<option value="social">Social</option>
-			<option value="diy">DIY</option>
-			<option value="charity">Charity</option>
-			<option value="cooking">Cooking</option>
-			<option value="relaxation">Relaxation</option>
-			<option value="music">Music</option>
-			<option value="busywork">Busywork</option>
-		</select>
-			<button id="bytype" type="button" class="button">Get Type</button> </div>
-		</form>
-	</div>	
-		<div id="tbox3">
-			<div class="title">
-				<h2>Free Activities</h2>
-			</div>
-			<p id="byprice">Click the button below and you will be given an activity that does not require anything that costs money!</p>
-			<button id="bypricebutton" type="button" class="button">Get Free</button> </div>
-	</div>
-	
-<div id="footer">
-	<div class="container">
-		<div class="fbox1">
-		<span><img src="images/address.png" width="60" height="60"></span>
-			<span>1234 Fictional Road Suite 
-			<br />Dublin, Ireland</span>
-		</div>
-		<div class="fbox1">
-			<span><img src="images/telephone.png" width="60" height="60"></span>
-			<span>
-				Telephone: +353 800 123 4657
-			</span>
-		</div>
-		<div class="fbox1">
-			<span><img src="images/email.png" width="60" height="60"></span>
-			<span>businessname@business.ie</span>
 		</div>
 	</div>
-</div>
-<script src="js/app.js"></script>
+
+	<!-- Content	 -->
+	<div class="wrapper">
+		<div id="banner" class="container"><img src="images/boreddog.jpg" width="1200" height="500" alt="" /></div>
+		<div id="welcome" class="container">
+			<div class="title">
+				<h2>Welcome to Bored in Quarentine</h2>
+			</div>
+			<p>This is <strong>Bored in Quarentine</strong>, a webpage where you get find suggestions of activities to
+				do while stuck at home during this pandemic. It will not save the world or cure corona virus (read it
+				with Cardi B's voice), but it may help you to keep busy or just dissociate, really. </p>
+		</div>
+
+		<!-- Activities Boxes -->
+		<div id="three-column" class="container">
+			<div><span class="arrow-down"></span></div>
+			<!-- box 1 -->
+			<div id="tbox1">
+				<div class="title">
+					<h2>Random Activities</h2>
+				</div>
+				<p id="myRandomData">Click the button bellow and get a suggestion of a random activity of any type, with
+					any number of participants and any price.</p>
+				<button id="random" href="#" class="button">Get Random</button>
+			</div>
+			<!-- box 2 -->
+			<div id="tbox2">
+				<div class="title">
+					<h2>Activities by Type</h2>
+				</div>
+				<p id="myTypeData">Select one of the type of activities among the options and get an activity related to
+					what you chose.</p>
+				<form>
+					<div>
+						<select id="section">
+							<option value="education">Education</option>
+							<option value="recreational">Recreational</option>
+							<option value="social">Social</option>
+							<option value="diy">DIY</option>
+							<option value="charity">Charity</option>
+							<option value="cooking">Cooking</option>
+							<option value="relaxation">Relaxation</option>
+							<option value="music">Music</option>
+							<option value="busywork">Busywork</option>
+						</select>
+						<button id="bytype" type="button" class="button">Get Type</button> </div>
+				</form>
+			</div>
+			<!-- box 3 -->
+			<div id="tbox3">
+				<div class="title">
+					<h2>Free Activities</h2>
+				</div>
+				<p id="byprice">Click the button below and you will be given an activity that does not require anything
+					that costs money!</p>
+				<button id="bypricebutton" type="button" class="button">Get Free</button>
+			</div>
+		</div>
+
+		<!-- Contact Information -->
+
+		<div id="footer">
+			<div class="container">
+				<div class="fbox1">
+					<span><img src="images/address.png" width="60" height="60"></span>
+					<span>1234 Fictional Road Suite
+						<br />Dublin, Ireland</span>
+				</div>
+				<div class="fbox1">
+					<span><img src="images/telephone.png" width="60" height="60"></span>
+					<span>
+						Telephone: +353 800 123 4657
+					</span>
+				</div>
+				<div class="fbox1">
+					<span><img src="images/email.png" width="60" height="60"></span>
+					<span>businessname@business.ie</span>
+				</div>
+			</div>
+		</div>
+		<!-- Import the app.js -->
+		<script src="js/app.js"></script>
 </body>
+
 </html>
